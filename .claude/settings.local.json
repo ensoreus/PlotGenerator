@@ -1,0 +1,34 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//private/tmp/**)",
+      "Bash(/opt/local/bin/gs -q -dNOPAUSE -dBATCH -sDEVICE=png16m -r80 -sOutputFile=lc_%d.png /Users/fil/Pictures/Retorics/Claude/LizardCurse.pdf)",
+      "Read(//Applications/Google Chrome.app/Contents/MacOS/**)",
+      "Read(//Applications/**)",
+      "Bash(/opt/local/bin/python3 -m pip --version)",
+      "Bash(sips -g all detective_plot_logo.png)",
+      "Read(//Users/fil/.claude/**)",
+      "Bash(python3 /Users/fil/Pictures/Retorics/Claude/.claude/skills/plot-booklet/scripts/build_booklet.py plot.json --out booklet)",
+      "Bash(pkill -f \"chrome-profile\")",
+      "Bash(cd *)",
+      "Bash(python3 -)",
+      "Bash(python3 /Users/fil/Pictures/Retorics/Claude/.claude/skills/plot-booklet/scripts/validate_plot.py plot.json)",
+      "Bash(echo \"exit=$?\")",
+      "Bash(python3 /Users/fil/Pictures/Retorics/Claude/.claude/skills/plot-booklet/scripts/build_booklet.py plot.json --out nofit --no-fit --no-preview)",
+      "Bash(rm *)",
+      "Bash(python3 scripts/build_booklet.py out/Demo/plot.json --out out/Demo/Demo)",
+      "Bash(lsof -nP -iTCP -sTCP:LISTEN)",
+      "Bash(awk 'NR==1 || /node|ngrok|python|ruby|Docker|com.docke/')",
+      "Bash(ps ax *)",
+      "Bash(cp scripts/.env scripts/.env.bak)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(node -e \"fetch\\('https://midjourney-webhook-prod-d1d09098825d.herokuapp.com/health'\\).then\\(async r=>console.log\\(await r.text\\(\\)\\)\\)\")",
+      "WebFetch(domain:legnext.ai)",
+      "WebFetch(domain:docs.legnext.ai)",
+      "Bash(heroku *)",
+      "Bash(git -C . log --oneline -20)",
+      "Bash(git -C . status)"
+    ]
+  }
+}

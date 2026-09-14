@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "legnext": {
+      "source": "legnext-ai/skills",
+      "sourceType": "github",
+      "skillPath": "legnext/SKILL.md",
+      "computedHash": "bd8242adc7cb3f42da319e426a25cf18df66d9b5509be7b9e9893d3efd4f2959"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Debian",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:trixie",
+	"features": {
+	    "ghcr.io/helpers4/devcontainer/claude-dev:1": {},
+            "ghcr.io/anthropics/devcontainer-features/claude-code:1.0":{},
+			"ghcr.io/devcontainers/features/node:2.1.0": {
+    			"version": "lts"
+			}
+	},
+	"mounts": [
+		"source=vs-code-config,target=/home/vscode/.vscode-server,type=volume",
+		"source=claude-code-config,target=/home/vscode/.claude,type=volume"
+	],
+
+	"service":"devcontainer",
+	"dockerComposeFile": "./docker-compose.yml",
+	"workspaceFolder": "/workplace",
+	"shutdownAction":"stopCompose",
+	"containerUser": "vscode"
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+}
