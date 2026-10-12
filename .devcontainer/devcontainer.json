@@ -7,7 +7,7 @@
 	"features": {
 	    "ghcr.io/helpers4/devcontainer/claude-dev:1": {},
             "ghcr.io/anthropics/devcontainer-features/claude-code:1.0":{},
-			"ghcr.io/devcontainers/features/node:2.1.0": {
+			"ghcr.io/devcontainers/features/node:2.1.1": {
     			"version": "lts"
 			}
 	},
