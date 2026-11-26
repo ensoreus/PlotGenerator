@@ -1,0 +1,15 @@
+# ключі Midjourney / Discord — ніколи не комітити
+scripts/.env
+scripts/.env.*
+*.env.bak
+.env
+
+# згенеровані буклети
+out/
+
+# саморобний шим замість npm-пакета
+node_modules/
+
+__pycache__/
+*.pyc
+.DS_Store
